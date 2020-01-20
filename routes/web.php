@@ -34,3 +34,11 @@ Route::get('/Login', function () {
 Route::get('/Daftar', function () {
     return view('daftar');
 });
+
+Route::get('/seputarlaman/login', function () {
+    return view('seputarlaman-al');
+});
+
+Route::get('/kedalamankata/login', function () {
+    return view('kedalamankata-al');
+});

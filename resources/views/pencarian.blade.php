@@ -1,8 +1,11 @@
 @extends('welcome')
 @section('content')
 
-<div>
+<div class="cari">
 
+      <img class="img-pos" src="https://ugm.ac.id/images/optimasi/ugm_header.png">
+      <h2 class="position">Wordnet UGM</h2>
+       
   <form class="search" action="/">
 
       <input type="text" placeholder="Search.." name="search">

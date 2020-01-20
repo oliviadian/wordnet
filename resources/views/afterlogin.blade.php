@@ -24,18 +24,19 @@
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                min-height: 100vh;
+                height: 100vh;
                 margin: 0;
             }
 
             .full-height {
-                min-height: 84vh;
+                height: 84vh;
             }
 
             .flex-center {
-                align-items: center;
+                align-items: normal;
                 display: flex;
-                justify-content: center;
+                justify-content: left;
+                padding: 20px;
             }
 
             .position-ref {
@@ -88,7 +89,7 @@
             }
 
             li a {
-                display: block;
+                display: inline-block;
                 color: white;
                 text-align: center;
                 padding: 18px 16px;
@@ -98,7 +99,6 @@
             li a:hover {
                 background-color: #5DADE2;
                 color: white;
-                text-decoration: none;
             }
 
             .w {
@@ -134,15 +134,16 @@
             }
 
             .box-sl {
-                width: 80%;
-                height: 68%;
-                padding: 1%;
+                width: 90%; 
+                padding: 3%;
                 border: 1px #1A2C43;
-                margin: 0;
+                margin: 2%;
                 background-color: #F1F1F1;
                 font-family: "Times New Roman", Times, serif;
                 color: black;
                 font-size: 15px;
+                margin-left: 5%;
+                margin-top: 1%;
             }
 
             .log-box{
@@ -252,8 +253,54 @@
                 margin-left: 20%;
             }
 
+            .vl {
+                border-left: 6px solid #A4B4BE;
+                height: 450px;
+                left: 50%;
+                margin-left: 3%;
+                top: 10%;
+            }
+
+            .teks2{
+                color: black;
+                font-family: "Times New Roman", Times, serif;
+                margin-left: 5%;
+                padding-top: 2%;
+            }
+
+            .box-kk{
+                width: 150%;
+                padding: 20px;
+                border: 1px #1A2C43;
+                margin: 10%;
+                background-color: #F1F1F1;
+                border-color: #004A74;
+                font-family: "Times New Roman", Times, serif;
+                color: black;
+                font-size: 15px;
+                margin-left: 2%;
+                margin-top: 2%;
+            }
+
+            .input-kk{
+                padding: 4px;
+                border-radius: 5px;
+                border-color: #004A74;
+                width: 300px;
+            }
+            
+           .tombol-kk{
+            width: 300px;
+            height: 40px;
+            margin: 20px;
+            margin-left: 2px;
+            background-color: #004A74;
+            color: white;
+            border-radius: 20px;
+           }
         </style>
     </head>
+
     <body>
 
     <header>
@@ -265,15 +312,13 @@
                 <li class="teks">Wordnet UGM</li>
                 <li><a href="/SeputarLaman">Seputar Laman</a></li>
                 <li><a href="/Pencarian">Pencarian</a></li>
+                <li><a href="/KedalamanKata/Login">Kedalaman Kata</a></li>
 
             <div class="right">
-                <li><a href="/Login">Login</a></li>
+                <li>
+                <a href="/Keluar">Keluar</a></li>
             </div>
 
-            <div class="right">
-                <li><a href="/Daftar">Daftar</a></li>
-            </div>
-               
             </ul>
 
         </div>
@@ -298,8 +343,10 @@
             @yield('content')
 
         </div>
+
         <footer>
             <p class="tab"> © 2020 UNIVERSITAS GADJAH MADA</p>
         </footer>
+        
     </body>
 </html>
