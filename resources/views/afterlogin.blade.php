@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="max-width=device-max-width, initial-scale=1">
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -28,8 +28,8 @@
                 margin: 0;
             }
 
-            .full-height {
-                height: 84vh;
+            .full-max-height {
+               height: 84vh;
             }
 
             .flex-center {
@@ -80,7 +80,7 @@
                 padding: 0;
                 overflow: hidden;
                 background-color: #1A2C43;
-                width: 100%;
+                min-max-width: 100%;
             }
 
             li {
@@ -99,11 +99,12 @@
             li a:hover {
                 background-color: #5DADE2;
                 color: white;
+                text-decoration: none;
             }
 
             .w {
-                width:50px; 
-                height:55px;
+                max-width:50px; 
+                max-height:55px;
                 padding-top: 6px;
             }
 
@@ -129,12 +130,12 @@
             }
 
             .logo{
-                width:200px; 
-                height:200px;
+                max-width:200px; 
+                max-height:200px;
             }
 
             .box-sl {
-                width: 90%; 
+                max-width: 90%; 
                 padding: 3%;
                 border: 1px #1A2C43;
                 margin: 2%;
@@ -147,8 +148,8 @@
             }
 
             .log-box{
-                width: 350px;
-                height: 280px;
+                max-width: 350px;
+                max-height: 280px;
                 padding-top: 25px;
                 padding-left: 30px;
                 border: 2px #5DADE2;
@@ -162,7 +163,7 @@
             
             .cari{
                 padding: 20px;
-                width: 50%;
+                min-width: 50%;
                 margin-bottom: 200px;
             }
 
@@ -179,7 +180,7 @@
 
             form.search button {
                 float: left;
-                width: 20%;
+                max-width: 20%;
                 padding: 10px;
                 background: #2196F3;
                 color: white;
@@ -202,9 +203,9 @@
             }
 
             .right{
-                width:6%;
+                max-width:6%;
                 float:right;
-                height:100%;
+                max-height:100%;
                 margin-right: 2%;
             }
 
@@ -237,9 +238,10 @@
             }
 
             .img-pos{
-                width:80px; 
-                height:85px;
+                max-width:80px; 
+                max-height:85px;
                 padding-top: 6px;
+                margin-left: 5%;
                 margin-left: 60px;
                 margin-top: 10px;
                 float: left;
@@ -250,26 +252,26 @@
                 font-family: "Times New Roman", Times, serif;
                 font-size: 50px;
                 padding: 4%;
-                margin-left: 20%;
+                padding-left: 17%;
             }
 
             .vl {
                 border-left: 6px solid #A4B4BE;
-                height: 450px;
+                max-height: 450px;
                 left: 50%;
                 margin-left: 3%;
                 top: 10%;
             }
 
             .teks2{
-                color: black;
+                color: #004267;
                 font-family: "Times New Roman", Times, serif;
                 margin-left: 5%;
                 padding-top: 2%;
             }
 
             .box-kk{
-                width: 150%;
+                max-width: 150%;
                 padding: 20px;
                 border: 1px #1A2C43;
                 margin: 10%;
@@ -286,18 +288,56 @@
                 padding: 4px;
                 border-radius: 5px;
                 border-color: #004A74;
-                width: 300px;
+                max-width: 300px;
             }
             
            .tombol-kk{
-            width: 300px;
-            height: 40px;
+            max-width: 300px;
+            max-height: 40px;
             margin: 20px;
             margin-left: 2px;
             background-color: #004A74;
             color: white;
             border-radius: 20px;
            }
+
+           .box-cari{
+            min-width: 60%;
+            min-height: 45%;
+            padding-top: 5%;
+            padding-left: 8%;
+            padding-right: 5%;
+            border: 1px #1A2C43;
+            margin: 10%;
+            background-color: #F1F1F1;
+            font-family: "Times New Roman", Times, serif;
+            color: black;
+            font-size: 15px;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            position: absolute;
+            }
+
+            .font-cari{
+                padding-left:10%;
+                font-size: 30px;
+            }
+
+            .font-info{
+                font-size: 14px;
+                padding-top: 2%;
+               
+            }
+
+            .teks3{
+                color: #004267;
+                font-family: "Times New Roman", Times, serif;
+                margin-left: 21%;
+                padding-top: 7%;
+            }
+           
         </style>
     </head>
 
@@ -316,7 +356,7 @@
 
             <div class="right">
                 <li>
-                <a href="/Keluar">Keluar</a></li>
+                <a href="/">Keluar</a></li>
             </div>
 
             </ul>
@@ -325,7 +365,7 @@
         
     </header>
     
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-max-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth

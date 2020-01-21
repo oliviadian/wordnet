@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="max-width=device-max-width, initial-scale=1">
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -24,12 +24,12 @@
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                min-height: 100vh;
+                height: 100vh;
                 margin: 0;
             }
 
-            .full-height {
-                min-height: 84vh;
+            .full-max-height {
+                height: 84vh;
             }
 
             .flex-center {
@@ -79,7 +79,7 @@
                 padding: 0;
                 overflow: hidden;
                 background-color: #1A2C43;
-                width: 100%;
+                min-width: 100%;
             }
 
             li {
@@ -102,8 +102,8 @@
             }
 
             .w {
-                width:50px; 
-                height:55px;
+                max-width:50px; 
+                max-height:55px;
                 padding-top: 6px;
             }
 
@@ -129,13 +129,13 @@
             }
 
             .logo{
-                width:200px; 
-                height:200px;
+                max-width:200px; 
+                max-height:200px;
             }
 
             .box-sl {
-                width: 80%;
-                height: 68%;
+                max-width: 80%;
+                max-height: 68%;
                 padding: 1%;
                 border: 1px #1A2C43;
                 margin: 0;
@@ -146,8 +146,8 @@
             }
 
             .log-box{
-                width: 350px;
-                height: 280px;
+                min-width: 350px;
+                min-height: 280px;
                 padding-top: 25px;
                 padding-left: 30px;
                 border: 2px #5DADE2;
@@ -161,7 +161,7 @@
             
             .cari{
                 padding: 20px;
-                width: 50%;
+                min-width: 50%;
                 margin-bottom: 200px;
             }
 
@@ -178,7 +178,7 @@
 
             form.search button {
                 float: left;
-                width: 20%;
+                max-width: 20%;
                 padding: 10px;
                 background: #2196F3;
                 color: white;
@@ -201,9 +201,9 @@
             }
 
             .right{
-                width:6%;
+                max-width:6%;
                 float:right;
-                height:100%;
+                max-height:100%;
                 margin-right: 2%;
             }
 
@@ -232,14 +232,14 @@
 
             button, input {
                 overflow: visible;
-                width: 290px;
+                width: 90%;
             }
 
             .img-pos{
-                width:80px; 
-                height:85px;
+                max-width:50%; 
+                max-height:55%;
                 padding-top: 6px;
-                margin-left: 60px;
+                margin-left: 5%;
                 margin-top: 10px;
                 float: left;
             }
@@ -249,7 +249,7 @@
                 font-family: "Times New Roman", Times, serif;
                 font-size: 50px;
                 padding: 4%;
-                margin-left: 20%;
+                padding-left: 17%;
             }
 
         </style>
@@ -280,7 +280,7 @@
         
     </header>
     
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-max-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth

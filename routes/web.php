@@ -39,6 +39,14 @@ Route::get('/seputarlaman/login', function () {
     return view('seputarlaman-al');
 });
 
-Route::get('/kedalamankata/login', function () {
+Route::get('/Kedalaman/login', function () {
     return view('kedalamankata-al');
+});
+
+Route::get('/PencarianNoun/login', function () {
+    return view('pencarian-noun');
+});
+
+Route::get('/PencarianVerb/login', function () {
+    return view('pencarian-verb');
 });
