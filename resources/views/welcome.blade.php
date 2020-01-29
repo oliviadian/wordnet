@@ -6,6 +6,9 @@
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="{!! asset('/App.css') !!}"> -->
+
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -19,12 +22,15 @@
         <style>
             html, body {
                 background-color: #fff;
-                background-image: url('./images/ugm.jpg');
+                background-image: url(./images/ugm.jpg);
                 background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
                 color: #636b6f;
+                background-position: center;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                height: 100vh;
+                height: 100%;
                 margin: 0;
             }
 
@@ -250,6 +256,18 @@
                 font-size: 50px;
                 padding: 4%;
                 padding-left: 17%;
+            }
+
+            /* @media screen and (max-width:1200px){
+                .title {
+                    font-size: 84px;
+                }
+
+                .logo{
+                    max-width:200px; 
+                    max-height:200px;
+                } */
+
             }
 
         </style>

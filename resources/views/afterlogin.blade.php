@@ -29,7 +29,8 @@
             }
 
             .full-max-height {
-               height: 84vh;
+                width: 1200px;
+                height: 550px;
             }
 
             .flex-center {
